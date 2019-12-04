@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "yarn eslint . -c .eslintrc.json --ext ts,tsx"
   },
   "dependencies": {
     "@types/node": "^12.12.14",
