@@ -6,7 +6,9 @@
     "dev": "node server/index.js",
     "build": "next build",
     "start": "NODE_ENV=production node server/index.js",
-    "lint": "yarn eslint . -c .eslintrc.json --ext ts,tsx,js,jsx"
+    "lint": "yarn eslint . -c .eslintrc.json --ext ts,tsx,js,jsx",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@types/node": "^12.12.14",
@@ -19,8 +21,15 @@
     "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/cli": "^5.2.8",
+    "@storybook/react": "^5.2.8",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
