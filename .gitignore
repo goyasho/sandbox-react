@@ -6,5 +6,8 @@
 # Intellij
 .idea
 
+# Next.js
+.next
+
 # test
 /coverage
