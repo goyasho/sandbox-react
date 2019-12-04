@@ -1,0 +1,13 @@
+.DS_Store
+
+/dist
+/node_modules
+
+# Intellij
+.idea
+
+# Next.js
+.next
+
+# test
+/coverage
