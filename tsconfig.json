@@ -13,7 +13,7 @@
     // 全てのライブラリの型宣言ファイルの型チェックをスキップする.
     "skipLibCheck": true,
     // すべての厳密な型チェックオプションを有効にする.
-    "strict": false,
+    "strict": true,
     // 大文字小文字を区別して参照を解決するようする.
     "forceConsistentCasingInFileNames": true,
     // 出力を出力しません.
