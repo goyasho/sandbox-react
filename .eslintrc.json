@@ -25,6 +25,16 @@
   },
   "rules": {
     "react/prop-types": "off",
-    "prettier/prettier": ["error", {"singleQuote": true}]
-  }
+    "prettier/prettier": ["error", {"singleQuote": true}],
+    "@typescript-eslint/explicit-function-return-type": "off"
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": ["error"]
+      }
+    }
+  ]
 }
