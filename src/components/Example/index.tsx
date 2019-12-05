@@ -12,7 +12,7 @@ export interface ExampleProps {
   action(): void;
 }
 
-const Example = (props: ExampleProps) => {
+const Example: React.FC<ExampleProps> = (props: ExampleProps) => {
   const { text, flag, action } = props;
   const [count, countChg] = useState(0);
   const countUp = useCallback(() => countChg(prev => prev + 1), []);

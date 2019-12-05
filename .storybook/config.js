@@ -1,16 +1,19 @@
-import { configure } from "@storybook/react";
+import { configure, addDecorator } from "@storybook/react";
 import { setConsoleOptions } from "@storybook/addon-console";
+import { withInfo } from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 
 setConsoleOptions({
   panelExclude: []
 });
 
-function loadStories() {
-  let req = require.context("../src/stories", true, /.stories.(tsx|js)$/);
-  req.keys().forEach(filename => req(filename));
+const req = require.context('../src', true, /.stories.(tsx|js)$/);
 
-  req = require.context("../src", true, /.stories.(tsx|js)$/);
-  req.keys().forEach(filename => req(filename));
+function loadStories() {
+  addDecorator(withInfo);
+  addDecorator(withKnobs);
+
+  req.keys().forEach(req);
 }
 
 configure(loadStories, module);
