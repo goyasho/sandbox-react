@@ -9,6 +9,7 @@
     "jest": "jest",
     "lint": "yarn eslint . -c .eslintrc.json --ext ts,tsx,js,jsx",
     "lint:fix": "yarn lint --fix",
+    "test": "yarn jest && yarn lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
