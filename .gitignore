@@ -11,3 +11,6 @@
 
 # test
 /coverage
+
+# storybook
+storybook-static
