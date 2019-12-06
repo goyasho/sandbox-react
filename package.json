@@ -2,6 +2,10 @@
   "name": "sandbox-react",
   "version": "1.0.0",
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=12.13 <13",
+    "yarn": ">=1.0"
+  },
   "scripts": {
     "dev": "node server/index.js",
     "build": "next build",
