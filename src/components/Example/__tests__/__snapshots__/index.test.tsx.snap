@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Example /> ボタン と テキスト が表示される 1`] = `
+<div>
+  <p>
+    hoge
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    ボタン
+  </button>
+  <p>
+    count:
+    0
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    -
+  </button>
+</div>
+`;
