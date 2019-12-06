@@ -1,35 +1,22 @@
 {
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    // ECMAScriptのターゲットバージョン.
     "target": "es5",
-    // コンパイルに含めるライブラリファイル.
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    // javascriptファイルをコンパイルできるようにする.
     "allowJs": true,
-    // 全てのライブラリの型宣言ファイルの型チェックをスキップする.
     "skipLibCheck": true,
-    // すべての厳密な型チェックオプションを有効にする.
     "strict": true,
-    // 大文字小文字を区別して参照を解決するようする.
     "forceConsistentCasingInFileNames": true,
-    // 出力を出力しません.
     "noEmit": true,
-    // CommonJSモジュールとESモジュール間の相互運用性を,すべてのインポート用に名前空間オブジェクトを作成することで可能にします。 「allowSyntheticDefaultImports」を暗示します.
     "esModuleInterop": true,
-    // モジュールコード生成.
     "module": "esnext",
-    // モジュール解決戦略を指定する.
     "moduleResolution": "node",
-    // jsonファイルから型解決した状態で値を取得できるようにする.
     "resolveJsonModule": true,
-    // 各ファイルを個別のモジュールとしてトランスポートします.
     "isolatedModules": true,
-    // JSXコード生成を指定する.
     "jsx": "preserve"
   },
   "exclude": [
